@@ -1,24 +1,48 @@
+###############################################################################
+# Enterprise Linux System Health Monitor
+# .gitignore
+###############################################################################
+
 # Logs
 logs/*.log
 
 # Reports
-reports/*.html
-reports/*.txt
+reports/*
+!reports/.gitkeep
+
+# Screenshots
+screenshots/*
+!screenshots/.gitkeep
+
+# Tests (generated artifacts only)
+tests/*
+!tests/.gitkeep
 
 # Temporary Files
 *.tmp
+*.temp
 *.swp
+*.swo
 *~
-
-# VS Code
-.vscode/
-
-# JetBrains
-.idea/
 
 # Bash History
 .history
 
+# VS Code
+.vscode/
+
+# JetBrains IDE
+.idea/
+
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Python (if used for testing)
+__pycache__/
+*.pyc
+
+# Archives
+*.zip
+*.tar
+*.tar.gz

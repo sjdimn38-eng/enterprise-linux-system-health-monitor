@@ -1,0 +1,27 @@
+#!/bin/bash
+
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+source "$PROJECT_ROOT/lib/config.sh"
+source "$PROJECT_ROOT/lib/logger.sh"
+
+source "$PROJECT_ROOT/modules/system_info.sh"
+source "$PROJECT_ROOT/modules/cpu.sh"
+source "$PROJECT_ROOT/modules/memory.sh"
+source "$PROJECT_ROOT/modules/disk.sh"
+
+clear
+
+log_header "ELSHM"
+
+log_info "Enterprise Linux System Health Monitor"
+
+system_info
+
+cpu_info
+
+memory_info
+
+disk_info
+
+log_success "Health Check Completed Successfully"
