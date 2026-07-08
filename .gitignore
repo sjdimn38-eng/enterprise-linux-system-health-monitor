@@ -11,7 +11,11 @@ reports/*
 !reports/.gitkeep
 
 # Screenshots
-screenshots/*
+# Track screenshots
+!screenshots/
+!screenshots/*.png
+!screenshots/*.jpg
+!screenshots/*.jpeg
 !screenshots/.gitkeep
 
 # Tests (generated artifacts only)
